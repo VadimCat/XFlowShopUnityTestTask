@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a158132bf3f461482742a73a8e87e4e, type: 3}
+  m_Name: LocationResetCheat
+  m_EditorClassIdentifier: Shop::Shop.Transaction
+  <Name>k__BackingField: 
+  <From>k__BackingField: []
+  <To>k__BackingField:
+  - <Product>k__BackingField: {fileID: 11400000, guid: f225ad1540b1e914f9c2cb2ee0c65690, type: 2}
+    <Amount>k__BackingField: Home
