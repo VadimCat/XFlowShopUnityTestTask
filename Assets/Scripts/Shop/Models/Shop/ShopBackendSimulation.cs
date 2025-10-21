@@ -20,7 +20,7 @@ namespace Shop
 
         public async Task Buy(Transaction transaction, CancellationToken cancellationToken)
         {
-            await Task.Delay(1000, cancellationToken);
+            await Task.Delay(3000, cancellationToken);
             cancellationToken.ThrowIfCancellationRequested();
             
             await _shop.Buy(transaction, cancellationToken);

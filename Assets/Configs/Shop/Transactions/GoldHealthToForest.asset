@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a158132bf3f461482742a73a8e87e4e, type: 3}
   m_Name: GoldHealthToForest
   m_EditorClassIdentifier: Shop::Shop.Transaction
-  <Name>k__BackingField: Gold to health
+  <Name>k__BackingField: Gold&Health teleport to forest
   <From>k__BackingField:
   - <Product>k__BackingField: {fileID: 11400000, guid: 7bfc6acb6376eb8468063468b6da9904, type: 2}
     <Amount>k__BackingField: 50

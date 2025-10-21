@@ -21,7 +21,11 @@ namespace Vip
 
         public override void Spend(string value)
         {
-            throw new Exception("VIP points cannot be spent.");
+            var uintValue = uint.Parse(value);
+            if (_value < uintValue)
+                throw new Exception("Not enough Vip seconds to spend.");
+            _value -= uintValue;
+            ValueChanged?.Invoke(TextValue);
         }
 
         public override void Add(string value)

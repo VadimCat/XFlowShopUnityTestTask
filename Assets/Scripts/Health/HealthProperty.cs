@@ -23,16 +23,17 @@ namespace Health
         public override void Spend(string value)
         {
             var uintValue = uint.Parse(value);
-            if (_value < uintValue)
-                throw new Exception("Not enough health to spend.");
-            _value -= uintValue;
+            if (uintValue >= 1000)
+                throw new Exception("Health amount percent can't be more then 100%");
+            _value -= _value * uintValue;
             ValueChanged?.Invoke(TextValue);
         }
 
         public override void Add(string value)
         {
             var uintValue = uint.Parse(value);
-            _value += uintValue;
+            var percent = uintValue / 100f;
+            _value += (uint)(_value * percent);
             ValueChanged?.Invoke(TextValue);
         }
     }
